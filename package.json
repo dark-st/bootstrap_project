@@ -1,0 +1,12 @@
+{
+  "name": "kinozal-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alecto/kinozal-template.git",
+  "author": "Alecto <fomenkoandrey@inbox.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.3.1"
+  }
+}
