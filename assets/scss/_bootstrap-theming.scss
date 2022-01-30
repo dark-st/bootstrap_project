@@ -1,0 +1,13 @@
+.navbar {
+  background-color: $color-deep-dark;
+  padding: 0;
+
+  &-expand-lg .navbar-nav .nav-link {
+    padding: $gap;
+    line-height: 20px;
+  }
+}
+.container {
+  padding-left: $gap;
+  padding-right: $gap;
+}

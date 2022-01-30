@@ -1,0 +1,70 @@
+.navbar {
+  background-color: #191919;
+  padding: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+html {
+  font-style: 16px;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+  line-height: 1.42857143;
+}
+
+a {
+  text-decoration: none;
+  color: #165690;
+}
+
+.header {
+  margin-bottom: 80px;
+}
+.header-logo {
+  padding: 100px 0;
+  text-align: center;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #232323;
+}
+.header-logo__title {
+  display: block;
+  font-size: 3.5rem;
+  color: #df8a13;
+  letter-spacing: 0.33em;
+  font-family: "PT Serif", serif;
+  padding-left: 0.33em;
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000;
+}
+.header-logo__description {
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000;
+  font-size: 1.15rem;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  display: block;
+}
+
+.navbar-right {
+  margin-right: -15px;
+}
+.navbar-right > li {
+  margin: 5px 0 5px 5px;
+}
+
+.navbar-left > li {
+  margin: 5px 5px 5px 0;
+}

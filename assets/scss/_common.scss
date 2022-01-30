@@ -1,0 +1,17 @@
+html {
+  font-style: 16px;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+  line-height: 1.42857143;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+}

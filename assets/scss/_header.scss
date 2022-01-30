@@ -1,0 +1,41 @@
+.header {
+  margin-bottom: $gap-xl;
+
+  &-logo {
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #232323;
+
+    &__title {
+      display: block;
+      font-size: 3.5rem;
+      color: $color-accent;
+      letter-spacing: 0.33em;
+      font-family: "PT Serif", serif;
+      padding-left: 0.33em;
+      text-shadow: 0 0 5px $color-black, 0 0 10px $color-black,
+        0 0 20px $color-black;
+    }
+
+    &__description {
+      text-shadow: 0 0 5px $color-black, 0 0 10px $color-black,
+        0 0 20px $color-black;
+      font-size: 1.15rem;
+      color: $color-white;
+      letter-spacing: 0.2em;
+      display: block;
+    }
+  }
+}
+.navbar-right {
+  margin-right: -$gap;
+  > li {
+    margin: 5px 0 5px 5px;
+  }
+}
+.navbar-left > li {
+  margin: 5px 5px 5px 0;
+}
