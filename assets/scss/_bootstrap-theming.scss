@@ -5,6 +5,24 @@
   &-expand-lg .navbar-nav .nav-link {
     padding: $gap;
     line-height: 20px;
+    border-radius: 4px;
+    transition: background-color 0.5s;
+
+    &:focus,
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &-dark .navbar-nav .nav-link.active {
+    background-color: $color-primary-dark;
+    transition: background-color 0.5s;
+
+    &:focus,
+    &:hover {
+      background-color: $color-primary-light;
+    }
   }
 }
 .container {
