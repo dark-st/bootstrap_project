@@ -1,6 +1,7 @@
 .navbar {
   background-color: #191919;
   padding: 0;
+  border-bottom: 1px solid transparent;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 15px;
@@ -27,6 +28,26 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.card {
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: none;
+}
+.card > .card-header {
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  border: none;
+  font-size: 1.25rem;
+  background-color: #df8a13;
+  padding: 9.99999999px 15px;
+}
+.card > .card-body {
+  background-color: #f4f4f4;
+  border: 1px solid #d5d5d5;
+  border-radius: 0 0 4px 4px;
+  padding: 15px;
 }
 
 html {
