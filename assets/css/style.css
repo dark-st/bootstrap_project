@@ -60,6 +60,16 @@
   margin-right: -15px;
 }
 
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+  line-height: 1.3333333;
+}
+
+.form-control {
+  font-size: 0.875rem;
+  line-height: 1.3333333;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;

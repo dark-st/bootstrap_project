@@ -26,6 +26,7 @@
     }
   }
 }
+// FIXME: изменения container для соответствия с макетом
 .container {
   padding-left: $gap;
   padding-right: $gap;
@@ -52,11 +53,22 @@
     padding: $gap;
   }
 }
+// FIXME: изменения row для соответствия с макетом
 .row > * {
   padding-left: $gap;
   padding-right: $gap;
 }
+
 .row {
   margin-left: -$gap;
   margin-right: -$gap;
+}
+
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+  line-height: 1.3333333;
+}
+.form-control {
+  font-size: 0.875rem;
+  line-height: 1.3333333;
 }

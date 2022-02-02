@@ -8,6 +8,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>КиноЗал</title>
       <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap"
             rel="stylesheet">
       <link href="assets/css/style.css" rel="stylesheet">
@@ -114,13 +115,18 @@
                                     </button>
                               </div>
                         </div>
-                        <div class="card">
+                        <div class="search-card card">
                               <div class="card-header">
                                     Поиск
                               </div>
                               <div class="card-body">
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                          content.</p>
+                                    <div class="input-group input-group-lg">
+                                          <input type="search" class="form-control" placeholder="Поиск по сайту"
+                                                aria-label="site-search" aria-describedby="button-addon2">
+                                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                <i class="bi bi-search" aria-hidden="true"></i>
+                                          </button>
+                                    </div>
                               </div>
                         </div>
                         <div class="card">
@@ -128,8 +134,16 @@
                                     Пользователь
                               </div>
                               <div class="card-body">
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                          content.</p>
+                                    <form action="login">
+                                          <input type="text" class="form-control form-control-lg mb-3" id="login"
+                                                placeholder="Логин">
+                                          <input type="password" class="form-control form-control-lg mb-3" id="password"
+                                                placeholder="Пароль">
+                                          <div class="d-grid gap-2">
+                                                <button class="btn btn-light btn-lg btn-outline-dark"
+                                                      type="button">Button</button>
+                                          </div>
+                                    </form>
                               </div>
                         </div>
                         <div class="card">
