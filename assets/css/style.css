@@ -135,3 +135,28 @@ a {
   overflow: hidden;
   border-radius: 4px;
 }
+
+.user-form {
+  position: relative;
+}
+.user-form__tabs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: none;
+}
+.user-form__tabs button {
+  padding: 14px 5px 12px !important;
+  color: #d5d5d5;
+  border: none !important;
+  background-color: transparent !important;
+  -webkit-transform: scale(1.35);
+      -ms-transform: scale(1.35);
+          transform: scale(1.35);
+}
+.user-form__tabs button :nth-of-type(1) {
+  margin-left: 5px;
+}
+.user-form__tabs button:focus, .user-form__tabs button:hover {
+  color: #ffffff;
+}

@@ -1,7 +1,37 @@
 .sidebar-left {
   margin-bottom: $gap-xl;
 }
+
 .vertical-slider {
   overflow: hidden;
   border-radius: 4px;
+}
+
+.user-form {
+  position: relative;
+
+  &__tabs {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border: none;
+
+    button {
+      padding: 14px 5px 12px !important;
+      color: $color-gray;
+      border: none !important;
+      background-color: transparent !important;
+
+      transform: scale(1.35);
+
+      :nth-of-type(1) {
+        margin-left: 5px;
+      }
+
+      &:focus,
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
 }
