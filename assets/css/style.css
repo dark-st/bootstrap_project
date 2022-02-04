@@ -236,6 +236,14 @@ a {
   padding: 10px 55px 10px 15px;
   color: #165690 !important;
 }
+.top-films__item:hover, .top-films__item:focus {
+  color: #ffffff !important;
+  background-color: #df8a13 !important;
+  border-color: #df8a13 !important;
+}
+.top-films__item:hover .badge, .top-films__item:focus .badge {
+  background-color: #232323;
+}
 .top-films__item:first-child {
   border-radius: 0;
   border-top: none;

@@ -100,6 +100,17 @@
     padding: 10px 55px 10px 15px;
     color: $color-primary !important;
 
+    &:hover,
+    &:focus {
+      color: $color-white !important;
+      background-color: $color-accent !important;
+      border-color: $color-accent !important;
+
+      .badge {
+        background-color: $color-dark;
+      }
+    }
+
     &:first-child {
       border-radius: 0;
       border-top: none;
