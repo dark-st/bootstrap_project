@@ -40,6 +40,15 @@
     position: relative;
     clear: both;
 
+    &:hover .img-thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+
+    &:hover a {
+      color: $color-accent;
+    }
+
     &:not(:last-child) {
       margin-bottom: $gap;
       min-height: 85px;
@@ -61,6 +70,7 @@
 
     &__link {
       @include block-shortener(1rem, 1.5, 50px, 2);
+      transition: color 0.25s;
     }
 
     &__img {

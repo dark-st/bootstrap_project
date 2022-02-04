@@ -70,6 +70,12 @@
   line-height: 1.3333333;
 }
 
+.img-thumbnail {
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -165,6 +171,13 @@ a {
   position: relative;
   clear: both;
 }
+.site-news-item:hover .img-thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+.site-news-item:hover a {
+  color: #df8a13;
+}
 .site-news-item:not(:last-child) {
   margin-bottom: 15px;
   min-height: 85px;
@@ -189,6 +202,9 @@ a {
   line-height: 1.5rem;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 .site-news-item__img {
   float: left;
