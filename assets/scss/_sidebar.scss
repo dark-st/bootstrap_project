@@ -99,6 +99,8 @@
     margin-right: -1px;
     padding: 10px 55px 10px 15px;
     color: $color-primary !important;
+    border-left-color: transparent;
+    border-right-color: transparent;
 
     &:hover,
     &:focus {
@@ -123,7 +125,7 @@
 
   &__badge {
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 50%;
     transform: translatey(-50%);
   }

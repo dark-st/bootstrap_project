@@ -1,4 +1,5 @@
 .new-films {
+  margin-bottom: $gap;
   &-row {
     margin-left: -$gap-sm;
     margin-right: -$gap-sm;
@@ -10,12 +11,18 @@
     padding-left: $gap-sm;
     padding-right: $gap-sm;
 
+    &:hover .img-thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+
+    &:hover h3 {
+      color: $color-white;
+    }
+
     &__img {
       width: 100%;
-      height: auto;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
+      @extend %img-pos-thumbnail;
     }
 
     &__thumbnail {
@@ -29,13 +36,50 @@
     }
 
     &__title {
-      font-size: 1rem;
-      overflow: hidden;
-      font-weight: bold;
+      @extend %thumbnail-title;
+    }
+  }
+}
+
+.top-week {
+  margin-bottom: $gap;
+  &-row {
+    margin-left: -$gap-sm;
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-left: $gap-sm;
+    padding-right: $gap-sm;
+
+    &:hover .img-thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+
+    &:hover h3 {
+      color: $color-white;
+    }
+
+    &__img {
+      width: 100%;
+      @extend %img-pos-thumbnail;
+    }
+
+    &__thumbnail {
       margin-bottom: 0;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      line-height: 17.6px;
+    }
+
+    &__caption {
+      padding: 9px;
+      color: $color-dark;
+      text-align: center;
+    }
+
+    &__title {
+      @extend %thumbnail-title;
     }
   }
 }

@@ -1,0 +1,16 @@
+%img-pos-thumbnail {
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+%thumbnail-title {
+  font-size: 1rem;
+  overflow: hidden;
+  font-weight: bold;
+  margin-bottom: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 17.6px;
+}
