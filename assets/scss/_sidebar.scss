@@ -35,3 +35,44 @@
     }
   }
 }
+.site-news {
+  &-item {
+    position: relative;
+    clear: both;
+
+    &:not(:last-child) {
+      margin-bottom: $gap;
+      min-height: 85px;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+      height: 1px;
+      width: calc(100% - 85px);
+      background-color: $color-gray;
+    }
+
+    &__title {
+      margin-bottom: 0.5em;
+    }
+
+    &__link {
+      @include block-shortener(1rem, 1.5, 50px, 2);
+    }
+
+    &__img {
+      float: left;
+      margin: 0 $gap-md $gap-md 0;
+      width: 75px;
+    }
+
+    &__date {
+      font-size: 0.8rem;
+      text-align: right;
+      color: #6f6f6f;
+    }
+  }
+}
