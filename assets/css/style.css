@@ -76,6 +76,14 @@
   transition: background-color 0.25s;
 }
 
+.list-group-item-action {
+  min-width: 1%;
+}
+
+.badge {
+  background-color: #777;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -215,4 +223,32 @@ a {
   font-size: 0.8rem;
   text-align: right;
   color: #6f6f6f;
+}
+
+.top-films__body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.top-films__item {
+  background-color: transparent;
+  margin-left: -1px;
+  margin-right: -1px;
+  padding: 10px 55px 10px 15px;
+  color: #165690 !important;
+}
+.top-films__item:first-child {
+  border-radius: 0;
+  border-top: none;
+}
+.top-films__item:last-child {
+  border-radius: 0;
+  border-bottom: none;
+}
+.top-films__badge {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+      -ms-transform: translatey(-50%);
+          transform: translatey(-50%);
 }
