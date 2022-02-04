@@ -1,0 +1,41 @@
+.new-films {
+  &-row {
+    margin-left: -$gap-sm;
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-left: $gap-sm;
+    padding-right: $gap-sm;
+
+    &__img {
+      width: 100%;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__caption {
+      padding: 9px;
+      color: $color-dark;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 1rem;
+      overflow: hidden;
+      font-weight: bold;
+      margin-bottom: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 17.6px;
+    }
+  }
+}
