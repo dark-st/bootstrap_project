@@ -83,3 +83,48 @@
     }
   }
 }
+
+.film-news-item {
+  margin-bottom: 40px;
+
+  h3 > a {
+    transition: color 0.25s;
+    font-family: $font-main;
+    margin-top: 20px;
+  }
+
+  &__thumbnail {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    width: 100%;
+    @extend %img-pos-thumbnail;
+  }
+
+  &:hover .img-thumbnail {
+    border-color: $color-accent;
+    background-color: $color-accent;
+  }
+
+  &:hover a {
+    text-decoration: none;
+    color: $color-accent;
+  }
+
+  &:hover &__btn {
+    color: $color-white;
+    background-color: $color-accent;
+  }
+
+  &__description {
+    text-align: justify;
+  }
+
+  &__btn {
+    background-color: $color-accent-light;
+    color: $color-white;
+    float: right;
+    transition: background-color 0.25s;
+  }
+}
