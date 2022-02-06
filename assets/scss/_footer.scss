@@ -1,0 +1,35 @@
+.footer {
+  background-color: $color-dark;
+  color: $color-gray;
+  padding-top: $gap * 3;
+  padding-bottom: 20px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: $gap-md;
+  }
+
+  a {
+    color: $color-gray-dark;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+    }
+  }
+
+  &-copyright {
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+      color: $color-gray;
+
+      &:hover,
+      &:focus {
+        color: $color-white;
+      }
+    }
+  }
+}

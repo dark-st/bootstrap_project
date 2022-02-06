@@ -167,6 +167,16 @@ h3 {
   margin-bottom: 9.99999999px;
 }
 
+h4 {
+  font-size: 1.125rem;
+  margin: 9.99999999px 0;
+  line-height: 19.8px;
+}
+
+p {
+  margin-bottom: 9.99999999px;
+}
+
 .header {
   margin-bottom: 80px;
 }
@@ -204,6 +214,10 @@ h3 {
 
 .navbar-left > li {
   margin: 5px 5px 5px 0;
+}
+
+.main {
+  margin-bottom: 80px;
 }
 
 .new-films {
@@ -268,8 +282,11 @@ h3 {
   color: #232323;
   text-align: center;
 }
-.film-news-item {
-  margin-bottom: 40px;
+.film-news-item:not(:last-child) {
+  margin-bottom: 45px;
+}
+.film-news-item:last-child {
+  margin-bottom: 9.99999999px;
 }
 .film-news-item h3 > a {
   -webkit-transition: color 0.25s;
@@ -428,4 +445,32 @@ h3 {
   -webkit-transform: translatey(-50%);
       -ms-transform: translatey(-50%);
           transform: translatey(-50%);
+}
+
+.footer {
+  background-color: #232323;
+  color: #d5d5d5;
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 9.99999999px;
+}
+.footer a {
+  color: #6f6f6f;
+}
+.footer a:hover, .footer a:focus {
+  color: #ffffff;
+}
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-copyright a {
+  color: #d5d5d5;
+}
+.footer-copyright a:hover, .footer-copyright a:focus {
+  color: #ffffff;
 }
