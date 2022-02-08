@@ -40,12 +40,12 @@
                                     <span class="navbar-toggler-icon"></span>
                               </button>
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-left navbar-nav me-auto mb-2 mb-lg-0">
+                                    <ul class="navbar-left navbar-nav me-auto mb-lg-0">
                                           <li class="nav-item">
-                                                <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                                                <a class="nav-link active" aria-current="page" href="#">Главная</a>
                                           </li>
                                           <li class="nav-item">
-                                                <a class="nav-link active" href="#">Фильмы</a>
+                                                <a class="nav-link" href="page.html">Фильмы</a>
                                           </li>
                                           <li class="nav-item">
                                                 <a class="nav-link" href="#">Сериалы</a>
@@ -74,7 +74,83 @@
 
       <div class="container">
             <div class="row">
-                  <main class="main order-1 col-9">
+                  <main class="main order-lg-1 col-xl-9 col-lg-8">
+
+                        <div class="search-card card d-lg-none">
+                              <div class="card-header">
+                                    Поиск
+                              </div>
+                              <div class="card-body">
+                                    <div class="input-group input-group-lg">
+                                          <input type="search" class="form-control" placeholder="Поиск по сайту"
+                                                aria-label="site-search" aria-describedby="button-addon2">
+                                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                <i class="bi bi-search" aria-hidden="true"></i>
+                                          </button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="user-form card d-lg-none">
+                              <div class="card-header">
+                                    Пользователь
+                              </div>
+                              <div class="card-body">
+                                    <ul class="user-form__tabs nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                          <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-home-tab"
+                                                      data-bs-toggle="pill" data-bs-target="#user-login-sidebar"
+                                                      type="button" role="tab" aria-controls="pills-home"
+                                                      aria-selected="true">
+                                                      <i class="bi bi-box-arrow-in-right"></i>
+                                                </button>
+                                          </li>
+                                          <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                      data-bs-target="#user-reg-sidebar" type="button" role="tab"
+                                                      aria-controls="pills-contact" aria-selected="false">
+                                                      <i class="bi bi-person-fill"></i>
+                                                </button>
+                                          </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                          <div class="tab-pane fade show active" id="user-login-sidebar" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
+
+                                                <form action="login">
+                                                      <input type="text" class="form-control form-control-lg mb-3"
+                                                            id="login" placeholder="Логин">
+                                                      <input type="password" class="form-control form-control-lg mb-3"
+                                                            id="password" placeholder="Пароль">
+                                                      <div class="d-grid gap-2">
+                                                            <button class="btn btn-light btn-lg btn-outline-dark"
+                                                                  type="button">Вход</button>
+                                                      </div>
+                                                </form>
+
+                                          </div>
+
+                                          <div class="tab-pane fade" id="user-reg-sidebar" role="tabpanel"
+                                                aria-labelledby="pills-contact-tab">
+
+                                                <form action="reg">
+                                                      <input type="text" class="form-control form-control-lg mb-3"
+                                                            placeholder="Логин">
+                                                      <input type="password" class="form-control form-control-lg mb-3"
+                                                            placeholder="Пароль">
+                                                      <input type="email" class="form-control form-control-lg mb-3"
+                                                            placeholder="Email">
+                                                      <div class="d-grid gap-2">
+                                                            <button class="btn btn-light btn-lg btn-outline-dark"
+                                                                  type="button">Вход</button>
+                                                      </div>
+                                                </form>
+
+                                          </div>
+                                    </div>
+
+                              </div>
+                        </div>
+
                         <section class="film-preview">
                               <h1>Иллюзия обмана 2</h1>
                               <div class="ratio ratio-16x9">
@@ -178,8 +254,8 @@
                               </form>
                         </section>
                   </main>
-                  <aside class="sidebar-left order-0 col-3">
-                        <div class="vertical-slider card">
+                  <aside class="sidebar-left order-lg-0 col-xl-3 col-lg-4">
+                        <div class="vertical-slider card d-none d-lg-block">
                               <div id="vertical-carousel" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                           <button type="button" data-bs-target="#vertical-carousel" data-bs-slide-to="0"
@@ -212,7 +288,7 @@
                                     </button>
                               </div>
                         </div>
-                        <div class="search-card card">
+                        <div class="search-card card d-none d-lg-block">
                               <div class="card-header">
                                     Поиск
                               </div>
@@ -226,7 +302,7 @@
                                     </div>
                               </div>
                         </div>
-                        <div class="user-form card">
+                        <div class="user-form card d-none d-lg-block">
                               <div class="card-header">
                                     Пользователь
                               </div>
@@ -408,7 +484,7 @@
                         <div class="footer-top">
                               <div class="row">
 
-                                    <div class="col-3">
+                                    <div class="col-lg-3 col-sm-6 footer__col-xs-6">
                                           <h4>Lorem ipsum dolor sit.</h4>
                                           <ul>
                                                 <li><a href="#">Lorem ipsum dolor.</a></li>
@@ -417,7 +493,7 @@
                                                 <li><a href="#">Minus, omnis vel.</a></li>
                                           </ul>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-lg-3 col-sm-6 footer__col-xs-6">
                                           <h4>Voluptatem, commodi, at.</h4>
                                           <ul>
                                                 <li><a href="#">Lorem ipsum dolor.</a></li>
@@ -427,7 +503,7 @@
                                                 <li><a href="#">Aspernatur, fugiat, possimus!</a></li>
                                           </ul>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-lg-3 col-sm-6 footer__col-xs-6">
                                           <h4>Sed, ducimus perspiciatis.</h4>
                                           <ul>
                                                 <li><a href="#">Lorem ipsum dolor.</a></li>
@@ -436,7 +512,7 @@
                                                 <li><a href="#">Minus, omnis vel.</a></li>
                                           </ul>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-lg-3 col-sm-6 footer__col-xs-6">
                                           <h4>Reiciendis, minima, a?</h4>
                                           <ul>
                                                 <li><a href="#">Lorem ipsum dolor.</a></li>
@@ -451,7 +527,7 @@
 
                         <div class="footer-bottom">
                               <div class="row">
-                                    <div class="footer-copyright col-12">
+                                    <div class="footer-copyright col-sm-12">
                                           <strong><a href="#">Bootstrap v5.1.3 - dark-st</a></strong>
                                     </div>
                               </div>

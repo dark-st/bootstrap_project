@@ -1,6 +1,6 @@
 html {
   font-size: $font-size;
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,8 +53,8 @@ h2 {
   }
 
   @include xs {
-    margin: 3 * $gap 0 2 * $gap 4 * $gap;
-    font-size: 2rem;
+    margin: 3 * $gap 0 2 * $gap 3 * $gap;
+    font-size: 1.75rem;
   }
 
   &::before {
