@@ -16,6 +16,10 @@
   line-height: 17.6px;
 }
 
+textarea {
+  resize: both;
+}
+
 .navbar {
   background-color: #191919;
   padding: 0;
@@ -355,6 +359,20 @@ p {
 }
 .film-description__card > .card-body {
   padding: 19px;
+}
+
+.film-comms > .card:last-child {
+  margin-bottom: 0;
+}
+
+.film-comm-form__btn {
+  float: right;
+  background-color: #f0ad4f;
+  color: #ffffff;
+}
+.film-comm-form__btn:hover, .film-comm-form__btn:focus {
+  color: #ffffff;
+  background-color: #df8a13;
 }
 
 .sidebar-left {

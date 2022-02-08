@@ -172,3 +172,23 @@
     }
   }
 }
+
+.film-comms > .card {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.film-comm-form {
+  &__btn {
+    float: right;
+    background-color: $color-accent-light;
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+      background-color: $color-accent;
+    }
+  }
+}
