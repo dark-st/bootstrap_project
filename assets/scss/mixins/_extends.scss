@@ -1,3 +1,7 @@
+@use "../presets" as *;
+@use "mixins" as *;
+@use "mixins-media" as *;
+
 %img-pos-thumbnail {
   height: auto;
   margin-right: auto;

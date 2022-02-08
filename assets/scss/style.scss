@@ -1,15 +1,23 @@
-@import "variables";
-@import "skin";
+@use "common/common";
+@use "common/bootstrap-theming";
 
-@import "mixins-media";
-@import "mixins";
-@import "extends";
+@use "components/header";
+@use "components/main";
+@use "components/sidebar";
+@use "components/footer";
+@use "components/page";
+// @import "variables";
+// @import "skin";
 
-@import "bootstrap-theming";
+// @import "mixins-media";
+// @import "mixins";
+// @import "extends";
 
-@import "common";
-@import "header";
-@import "main";
-@import "page";
-@import "sidebar";
-@import "footer";
+// @import "bootstrap-theming";
+
+// @import "common";
+// @import "header";
+// @import "main";
+// @import "page";
+// @import "sidebar";
+// @import "footer";

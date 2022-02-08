@@ -1,3 +1,5 @@
+@use "../presets" as *;
+
 @mixin lg {
   @media (max-width: $lg - 0.2) {
     @content;
@@ -57,7 +59,6 @@
     @content;
   }
 }
-
 
 @mixin sm-xs {
   @media (max-width: $sm - 0.2) and (min-width: $xs) {

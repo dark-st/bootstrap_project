@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 html {
   font-size: $font-size;
   overflow-x: hidden;

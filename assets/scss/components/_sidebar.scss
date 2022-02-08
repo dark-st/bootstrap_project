@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 .sidebar-left {
   margin-bottom: $gap-xl;
 }
