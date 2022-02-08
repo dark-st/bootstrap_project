@@ -138,3 +138,37 @@
     transition: background-color 0.25s;
   }
 }
+
+.film-preview {
+  font-size: 1.2em;
+
+  &__card {
+    margin-bottom: 20px;
+
+    > .card-body {
+      padding: 19px;
+    }
+  }
+
+  &__wrapper {
+    white-space: nowrap;
+
+    &:not(:last-of-type) {
+      margin-right: $gap;
+    }
+  }
+
+  &__badge {
+    font-size: 0.8em;
+  }
+}
+
+.film-description {
+  &__card {
+    margin-bottom: 20px;
+
+    > .card-body {
+      padding: 19px;
+    }
+  }
+}
