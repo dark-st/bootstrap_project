@@ -11,13 +11,20 @@
 
     &__title {
       display: block;
-      font-size: 3.5rem;
       color: $color-accent;
       letter-spacing: 0.33em;
       font-family: $font-header;
       padding-left: 0.33em;
       text-shadow: 0 0 5px $color-black, 0 0 10px $color-black,
         0 0 20px $color-black;
+
+      @include xs {
+        font-size: 2.5rem;
+      }
+
+      @include xs-min {
+        font-size: 3.5rem;
+      }
     }
 
     &__description {
@@ -31,11 +38,34 @@
   }
 }
 .navbar-right {
-  margin-right: -$gap;
+  @include md-min {
+    margin-right: -$gap;
+  }
+
+  @include md {
+    margin-right: 0;
+  }
+
   > li {
-    margin: 5px 0 5px 5px;
+    @include md-min {
+      margin: 5px 0 5px 5px;
+    }
+
+    @include md {
+      margin: 5px 0 0 0;
+
+      &:last-of-type {
+        margin-bottom: 5px;
+      }
+    }
   }
 }
 .navbar-left > li {
-  margin: 5px 5px 5px 0;
+  @include md-min {
+    margin: 5px 5px 5px 0;
+  }
+
+  @include md {
+    margin: 5px 0 0 0;
+  }
 }

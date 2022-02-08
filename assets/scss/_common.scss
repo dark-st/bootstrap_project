@@ -22,10 +22,18 @@ section {
 }
 
 h1 {
-  margin: -$gap-md 0 1em;
-  font-size: 3rem;
   font-family: $font-header;
   line-height: 1.1;
+
+  @include xs-min {
+    margin: -$gap-md 0 1em;
+    font-size: 3rem;
+  }
+
+  @include xs {
+    margin: 0 0 1em;
+    font-size: 2rem;
+  }
 
   &::after {
     content: "";
@@ -36,10 +44,18 @@ h1 {
   }
 }
 h2 {
-  margin: 4 * $gap 0 3 * $gap 3 * $gap;
-  font-size: 2.5rem;
   font-family: $font-header;
   line-height: 1.1;
+
+  @include xs-min {
+    margin: 4 * $gap 0 3 * $gap 3 * $gap;
+    font-size: 2.5rem;
+  }
+
+  @include xs {
+    margin: 3 * $gap 0 2 * $gap 4 * $gap;
+    font-size: 2rem;
+  }
 
   &::before {
     position: absolute;
@@ -60,9 +76,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
   line-height: 1.1;
   margin-bottom: $gap-md;
+
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+
+  @include xs {
+    font-size: 1.25rem;
+  }
 }
 
 h4 {

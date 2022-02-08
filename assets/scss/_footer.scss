@@ -32,4 +32,10 @@
       }
     }
   }
+
+  &__col-xs-6 {
+    @include xs {
+      width: 50%;
+    }
+  }
 }

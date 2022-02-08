@@ -8,10 +8,18 @@ textarea {
   border-bottom: 1px solid transparent;
 
   &-expand-lg .navbar-nav .nav-link {
-    padding: $gap;
     line-height: 20px;
     border-radius: 4px;
     transition: background-color 0.5s;
+
+    @include md-min {
+      padding: $gap;
+    }
+
+    @include md {
+      text-align: center;
+      padding: $gap-md;
+    }
 
     &:focus,
     &:hover {
@@ -29,12 +37,21 @@ textarea {
       background-color: $color-primary-light;
     }
   }
+
+  &-toggler {
+    @include md {
+      position: relative;
+      right: -50%;
+      transform: translateX(-50%);
+      margin: $gap-md 0;
+    }
+  }
 }
 // FIXME: изменения container для соответствия с макетом
-.container {
-  padding-left: $gap;
-  padding-right: $gap;
-}
+// .container {
+//   padding-left: $gap;
+//   padding-right: $gap;
+// }
 
 .card {
   border-radius: 4px;
@@ -58,15 +75,15 @@ textarea {
   }
 }
 // FIXME: изменения row для соответствия с макетом
-.row > * {
-  padding-left: $gap;
-  padding-right: $gap;
-}
+// .row > * {
+//   padding-left: $gap;
+//   padding-right: $gap;
+// }
 
-.row {
-  margin-left: -$gap;
-  margin-right: -$gap;
-}
+// .row {
+//   margin-left: -$gap;
+//   margin-right: -$gap;
+// }
 
 .input-group-lg > .form-control {
   font-size: 0.875rem;
