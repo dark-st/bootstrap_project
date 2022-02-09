@@ -37,6 +37,18 @@
       }
     }
   }
+
+  &__btn {
+    background-color: transparent;
+    border-color: #6c757d;
+    color: #6c757d;
+
+    &:hover {
+      color: #fff;
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+  }
 }
 .site-news {
   &-item {

@@ -5,6 +5,10 @@ textarea {
   resize: both;
 }
 
+iframe {
+  border-radius: 4px 4px 0 0;
+}
+
 .navbar {
   background-color: $color-deep-dark;
   padding: 0;
@@ -94,8 +98,11 @@ textarea {
 }
 
 .form-control {
-  font-size: 0.875rem;
   line-height: 1.3333333;
+
+  &::placeholder {
+    font-size: 0.875rem;
+  }
 }
 
 .img-thumbnail {

@@ -90,6 +90,10 @@ textarea {
   resize: both;
 }
 
+iframe {
+  border-radius: 4px 4px 0 0;
+}
+
 .navbar {
   background-color: #191919;
   padding: 0;
@@ -142,8 +146,22 @@ textarea {
 }
 
 .form-control {
-  font-size: 0.875rem;
   line-height: 1.3333333;
+}
+.form-control::-webkit-input-placeholder {
+  font-size: 0.875rem;
+}
+.form-control::-moz-placeholder {
+  font-size: 0.875rem;
+}
+.form-control:-ms-input-placeholder {
+  font-size: 0.875rem;
+}
+.form-control::-ms-input-placeholder {
+  font-size: 0.875rem;
+}
+.form-control::placeholder {
+  font-size: 0.875rem;
 }
 
 .img-thumbnail {
@@ -337,6 +355,16 @@ textarea {
 }
 .user-form__tabs button:focus, .user-form__tabs button:hover {
   color: #ffffff;
+}
+.user-form__btn {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+.user-form__btn:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 
 .site-news-item {
