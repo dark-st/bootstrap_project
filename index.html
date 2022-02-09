@@ -83,44 +83,45 @@
                               <div class="card-body">
                                     <div class="input-group input-group-lg">
                                           <input type="search" class="form-control" placeholder="Поиск по сайту"
-                                                aria-label="site-search" aria-describedby="button-addon2">
-                                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                aria-label="site-search" aria-describedby="search-btn-main">
+                                          <button class="btn btn-outline-secondary" type="button" id="search-btn-main">
                                                 <i class="bi bi-search" aria-hidden="true"></i>
                                           </button>
                                     </div>
                               </div>
                         </div>
+
                         <div class="user-form card d-lg-none">
                               <div class="card-header">
                                     Пользователь
                               </div>
                               <div class="card-body">
-                                    <ul class="user-form__tabs nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <ul class="user-form__tabs nav nav-pills mb-3" id="login-main-tabs" role="tablist">
                                           <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="pills-home-tab"
-                                                      data-bs-toggle="pill" data-bs-target="#user-login-sidebar"
-                                                      type="button" role="tab" aria-controls="pills-home"
+                                                <button class="nav-link active" id="user-login-main"
+                                                      data-bs-toggle="pill" data-bs-target="#user-login-main"
+                                                      type="button" role="tab" aria-controls="user-login-main"
                                                       aria-selected="true">
                                                       <i class="bi bi-box-arrow-in-right"></i>
                                                 </button>
                                           </li>
                                           <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                                      data-bs-target="#user-reg-sidebar" type="button" role="tab"
-                                                      aria-controls="pills-contact" aria-selected="false">
+                                                <button class="nav-link" id="user-reg-main" data-bs-toggle="pill"
+                                                      data-bs-target="#user-reg-main" type="button" role="tab"
+                                                      aria-controls="user-reg-main" aria-selected="false">
                                                       <i class="bi bi-person-fill"></i>
                                                 </button>
                                           </li>
                                     </ul>
-                                    <div class="tab-content" id="pills-tabContent">
-                                          <div class="tab-pane fade show active" id="user-login-sidebar" role="tabpanel"
-                                                aria-labelledby="pills-home-tab">
+                                    <div class="tab-content" id="main-tabContent">
+                                          <div class="tab-pane fade show active" id="user-login-form-main"
+                                                role="tabpanel" aria-labelledby="user-login-main">
 
                                                 <form action="login">
                                                       <input type="text" class="form-control form-control-lg mb-3"
-                                                            id="login" placeholder="Логин">
+                                                            placeholder="Логин">
                                                       <input type="password" class="form-control form-control-lg mb-3"
-                                                            id="password" placeholder="Пароль">
+                                                            placeholder="Пароль">
                                                       <div class="d-grid gap-2">
                                                             <button class="btn btn-light btn-lg btn-outline-dark"
                                                                   type="button">Вход</button>
@@ -129,8 +130,8 @@
 
                                           </div>
 
-                                          <div class="tab-pane fade" id="user-reg-sidebar" role="tabpanel"
-                                                aria-labelledby="pills-contact-tab">
+                                          <div class="tab-pane fade" id="user-reg-form-main" role="tabpanel"
+                                                aria-labelledby="user-reg-main">
 
                                                 <form action="reg">
                                                       <input type="text" class="form-control form-control-lg mb-3"
@@ -554,8 +555,9 @@
                               <div class="card-body">
                                     <div class="input-group input-group-lg">
                                           <input type="search" class="form-control" placeholder="Поиск по сайту"
-                                                aria-label="site-search" aria-describedby="button-addon2">
-                                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                aria-label="site-search" aria-describedby="search-sidebar-btn">
+                                          <button class="btn btn-outline-secondary" type="button"
+                                                id="search-sidebar-btn">
                                                 <i class="bi bi-search" aria-hidden="true"></i>
                                           </button>
                                     </div>
@@ -566,32 +568,33 @@
                                     Пользователь
                               </div>
                               <div class="card-body">
-                                    <ul class="user-form__tabs nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <ul class="user-form__tabs nav nav-pills mb-3" id="login-sidebar-tabs"
+                                          role="tablist">
                                           <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="pills-home-tab"
+                                                <button class="nav-link active" id="user-login-sidebar"
                                                       data-bs-toggle="pill" data-bs-target="#user-login-sidebar"
-                                                      type="button" role="tab" aria-controls="pills-home"
+                                                      type="button" role="tab" aria-controls="user-login-sidebar"
                                                       aria-selected="true">
                                                       <i class="bi bi-box-arrow-in-right"></i>
                                                 </button>
                                           </li>
                                           <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                                      data-bs-target="#user-reg-sidebar" type="button" role="tab"
-                                                      aria-controls="pills-contact" aria-selected="false">
+                                                <button class="nav-link" id="user-reg-sidebar" data-bs-toggle="pill"
+                                                      data-bs-target="#user-reg-main" type="button" role="tab"
+                                                      aria-controls="user-reg-sidebar" aria-selected="false">
                                                       <i class="bi bi-person-fill"></i>
                                                 </button>
                                           </li>
                                     </ul>
-                                    <div class="tab-content" id="pills-tabContent">
-                                          <div class="tab-pane fade show active" id="user-login-sidebar" role="tabpanel"
-                                                aria-labelledby="pills-home-tab">
+                                    <div class="tab-content" id="sidebar-tabContent">
+                                          <div class="tab-pane fade show active" id="user-login-form-sidebar"
+                                                role="tabpanel" aria-labelledby="user-login-sidebar">
 
                                                 <form action="login">
                                                       <input type="text" class="form-control form-control-lg mb-3"
-                                                            id="login" placeholder="Логин">
+                                                            placeholder="Логин">
                                                       <input type="password" class="form-control form-control-lg mb-3"
-                                                            id="password" placeholder="Пароль">
+                                                            placeholder="Пароль">
                                                       <div class="d-grid gap-2">
                                                             <button class="btn btn-light btn-lg btn-outline-dark"
                                                                   type="button">Вход</button>
@@ -600,8 +603,8 @@
 
                                           </div>
 
-                                          <div class="tab-pane fade" id="user-reg-sidebar" role="tabpanel"
-                                                aria-labelledby="pills-contact-tab">
+                                          <div class="tab-pane fade" id="user-reg-form-sidebar" role="tabpanel"
+                                                aria-labelledby="user-reg-sidebar">
 
                                                 <form action="reg">
                                                       <input type="text" class="form-control form-control-lg mb-3"
